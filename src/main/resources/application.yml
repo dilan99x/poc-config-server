@@ -1,0 +1,17 @@
+server:
+  port: 8899
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dilan99x/wednest-config-store
+          username: dilan99x
+          search-paths:
+            - 'wednest-config-store/*service'
+          password: dv51102dilan
+          repos:
+            uri: https://github.com/dilan99x/secure-config-store
+wednest:
+  config:
+    store: git repository
